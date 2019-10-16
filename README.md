@@ -1,1 +1,1 @@
-# k8-sftp-pull
+# k8-sftp-push
