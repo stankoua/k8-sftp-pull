@@ -1,3 +1,12 @@
 *.class
 *.log
 target/
+
+# ssh keys 
+src/main/resources/ssh_host_key
+src/main/resources/ssh_host_key.pub
+
+# ide
+.bloop
+.metals
+project/.bloop
