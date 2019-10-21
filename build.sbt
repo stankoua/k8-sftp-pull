@@ -11,7 +11,8 @@ lazy val root = (project in file("."))
     libraryDependencies ++= Seq(
       catsEffect,
       sshd,
-      scalaTest % Test
+      scalaTest % Test,
+      slf4j
     )
   )
 
