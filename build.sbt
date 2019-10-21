@@ -9,7 +9,10 @@ lazy val root = (project in file("."))
   .settings(
     name := "k8-sftp-push",
     libraryDependencies ++= Seq(
+      catsEffect,
       sshd,
       scalaTest % Test
     )
   )
+
+fork in run := true
