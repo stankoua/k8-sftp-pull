@@ -9,11 +9,14 @@ lazy val root = (project in file("."))
   .settings(
     name := "k8-sftp-push",
     libraryDependencies ++= Seq(
+      benji,
       catsEffect,
-      sshd,
+      kafkaStream,
       scalaTest % Test,
-      slf4j
+      slf4j,
+      sshd
     )
   )
 
 fork in run := true
+mainClass in Compile := Some("bp2s.Main")

@@ -2,9 +2,8 @@
 *.log
 target/
 
-# ssh keys 
-src/main/resources/ssh_host_key
-src/main/resources/ssh_host_key.pub
+# local files
+local
 
 # ide
 .bloop
